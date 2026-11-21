@@ -1,3 +1,5 @@
+> **本项目已改造为「出行决策助手」**：可查询附近商场、结合品牌/场景偏好生成推荐并给出出行建议。详见 [`项目介绍文档.md`](./项目介绍文档.md)。以下是原始模板说明。
+
 # OpenAI Agents Starter (Python)
 
 跑在 EdgeOne Makers 上的全栈 Python Agent 模板：基于 OpenAI Agents SDK（Python）的流式聊天，包含自定义工具与基于 `context.store` 的会话记忆。

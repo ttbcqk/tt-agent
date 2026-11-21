@@ -24,7 +24,7 @@ from openai.types.responses import ResponseTextDeltaEvent
 from agents import Agent, OpenAIChatCompletionsModel, Runner
 
 from .._logger import create_logger
-from .._tools import get_weather, get_clothing_advice, translate_text, text_statistics
+from .._tools import search_nearby_malls, get_mall_details, plan_trip
 
 
 load_dotenv()
@@ -46,13 +46,18 @@ llm_model = OpenAIChatCompletionsModel(
 
 # ========== Agent ==========
 agent = Agent(
-    name="Assistant",
+    name="出行决策助手",
     instructions=(
-        "You are an EdgeOne Makers OpenAI Agents SDK (Python) starter example: an out-of-the-box Agent template that helps developers quickly run through and validate platform capabilities.\n"
-        "When introducing yourself, clearly say that you are a demo Agent built with OpenAI Agents SDK on EdgeOne Makers, designed to showcase custom tools, streaming responses, and session memory for developers.\n"
-        "Use the four custom tools when they help you answer the user concretely. Otherwise answer directly and keep the response brief."
+        "你是一个「出行决策助手」，帮用户根据所在位置和品牌/场景偏好，推荐合适的附近商场并给出出行建议。\n"
+        "工作流程：\n"
+        "1. 从用户消息中提取：当前位置（如「上海静安寺」）、品牌或场景偏好（如情侣约会、有咖啡和轻奢品牌）、以及预算/时间等限制。\n"
+        "2. 调用 search_nearby_malls 搜索附近商场；如需了解某商场详情，调用 get_mall_details。\n"
+        "3. 结合用户偏好对结果做匹配和排序，选出最合适的 2-3 个商场，说明推荐理由（品牌、场景、距离等）。\n"
+        "4. 调用 plan_trip 生成出行建议，并把「需要用户手动确认的事项」单独列出。\n"
+        "重要边界：你只提供信息和建议，绝不代替用户下单、预订或付款；涉及营业时间、排队、票价等实时信息时，提示用户以实际为准。\n"
+        "如果用户没给位置或偏好，用简短中文追问补全，不要凭空编造。全程用友好、简洁的中文回答。"
     ),
-    tools=[get_weather, get_clothing_advice, translate_text, text_statistics],
+    tools=[search_nearby_malls, get_mall_details, plan_trip],
     model=llm_model,
 )
 
