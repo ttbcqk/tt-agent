@@ -24,16 +24,16 @@ import { I18nProvider, LangToggle, useT, MessageKeys } from './i18n';
 import { deleteSnapshot, loadSnapshot, saveSnapshot } from './lib/chatUiStore';
 import styles from './App.module.css';
 
-const LAMP_IDS = ['search_nearby_malls', 'get_mall_details', 'plan_trip'] as const;
+const LAMP_IDS = ['generate_question', 'evaluate_answer', 'final_report'] as const;
 const LAMP_ICONS: Record<string, string> = {
-  search_nearby_malls: '🏬',
-  get_mall_details: '🔍',
-  plan_trip: '🧭',
+  generate_question: '📝',
+  evaluate_answer: '💬',
+  final_report: '📊',
 };
 const LAMP_I18N_KEYS: Record<string, string> = {
-  search_nearby_malls: 'tool.search',
-  get_mall_details: 'tool.details',
-  plan_trip: 'tool.plan',
+  generate_question: 'tool.question',
+  evaluate_answer: 'tool.evaluate',
+  final_report: 'tool.report',
 };
 
 const CONVERSATION_ID_STORAGE_KEY = 'eo_conversation_id';

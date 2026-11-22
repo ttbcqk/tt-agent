@@ -1,25 +1,25 @@
 const en = {
   // Header
-  "app.title": "Trip Decision Assistant",
-  "app.subtitle": "Find nearby malls · Match your preferences · Plan your trip",
+  "app.title": "AI Interview Coach",
+  "app.subtitle": "Mock interview · Answer review · Final report",
 
   // Empty state
-  "empty.title": "Trip Decision Assistant",
-  "empty.hint": "Tell me where you are and what brands or scenes you like. I'll search nearby malls, recommend the best fits, and give you a trip plan.",
-  "empty.features": "Nearby mall search · Preference matching · Trip planning",
+  "empty.title": "AI Interview Coach",
+  "empty.hint": "Tell me the role you're interviewing for. I'll run a realistic mock interview, review each answer, and generate a final report.",
+  "empty.features": "Multi-round mock · 4-dimension review · Final report",
 
   // Chat input
-  "chat.placeholder": "e.g. I'm near Jing'an Temple, recommend a mall for a date...  ⏎ Send · Shift+⏎ Newline",
+  "chat.placeholder": "e.g. Start a mock interview for a frontend engineer  ⏎ Send · Shift+⏎ Newline",
   "chat.hint": "Powered by OpenAI Agents SDK + EdgeOne Makers · Demo only",
 
   // Preset questions
-  "preset.1": "I'm near Jing'an Temple, Shanghai. Recommend a mall for a date.",
-  "preset.2": "Find a nearby mall with cafes and luxury brands, and plan my trip.",
+  "preset.1": "Start a mock interview for a frontend engineer",
+  "preset.2": "Run a product manager mock interview for me",
 
   // Tool indicators
-  "tool.search": "Search malls",
-  "tool.details": "Mall details",
-  "tool.plan": "Trip plan",
+  "tool.question": "Generate question",
+  "tool.evaluate": "Review answer",
+  "tool.report": "Final report",
 
   // Status & errors
   "status.error": "Request failed. Please check if the backend service is running.",
@@ -35,15 +35,15 @@ const en = {
 
   // Conversation sidebar
   "sidebar.label": "Conversation list",
-  "sidebar.title": "Chats",
-  "sidebar.newChat": "New chat",
+  "sidebar.title": "Interviews",
+  "sidebar.newChat": "New interview",
   "sidebar.loading": "Loading conversations...",
   "sidebar.loadMore": "Load more",
   "sidebar.loadingMore": "Loading...",
-  "sidebar.emptyTitle": "No conversations yet",
-  "sidebar.emptyHint": "Click \"New chat\" to start your first conversation.",
-  "sidebar.delete": "Delete conversation",
-  "sidebar.deleteConfirm": "Permanently delete this conversation? This cannot be undone.",
+  "sidebar.emptyTitle": "No interviews yet",
+  "sidebar.emptyHint": "Click \"New interview\" to start your first mock interview.",
+  "sidebar.delete": "Delete interview",
+  "sidebar.deleteConfirm": "Permanently delete this interview? This cannot be undone.",
 
   // Aria labels (button hover/screen-reader)
   "aria.send": "Send",

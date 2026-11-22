@@ -58,20 +58,20 @@ export default function CodeViewer() {
           <L n={4}><Cmt t="# 1. Define tools with @function_tool" /></L>
           <L n={5}><Dec t="@function_tool" /></L>
           <L n={6}>
-            <Kw t="def " /><Fn t="search_nearby_malls" /><Op t="(" />
-            <Va t="location" /><Op t=": " /><Ty t="Annotated" /><Op t="[" />
-            <Ty t="str" /><Op t=", " /><Str t='"Location to search around"' />
+            <Kw t="def " /><Fn t="generate_question" /><Op t="(" />
+            <Va t="role" /><Op t=": " /><Ty t="Annotated" /><Op t="[" />
+            <Ty t="str" /><Op t=", " /><Str t='"Target interview role"' />
             <Op t="]) -> " /><Ty t="str" /><Op t=":" />
           </L>
           <L n={7}>
-            <I1><Doc t='"""Search nearby malls by location and preference."""' /></I1>
+            <I1><Doc t='"""Generate a mock interview question by role."""' /></I1>
           </L>
           <L n={8}>
             <I1><Cmt t="# ..." /></I1>
           </L>
           <L n={9} />
           <L n={10}>
-            <Va t="TOOLS" /><Op t=" = [" /><Fn t="search_nearby_malls" /><Op t=", " /><Cmt t="# + details, trip plan" /><Op t="]" />
+            <Va t="TOOLS" /><Op t=" = [" /><Fn t="generate_question" /><Op t=", " /><Cmt t="# + review, final report" /><Op t="]" />
           </L>
           <L n={11} />
 
@@ -116,7 +116,7 @@ export default function CodeViewer() {
             <I1><Va t="agent" /><Op t=" = " /><Ty t="Agent" /><Op t="(" /></I1>
           </L>
           <L n={25}>
-            <I2><Va t="name" /><Op t="=" /><Str t='"出行决策助手"' /><Op t="," /></I2>
+            <I2><Va t="name" /><Op t="=" /><Str t='"AI 面试教练"' /><Op t="," /></I2>
           </L>
           <L n={26}>
             <I2><Va t="instructions" /><Op t="=" /><Va t="INSTRUCTIONS" /><Op t="," /></I2>
@@ -177,7 +177,7 @@ export default function CodeViewer() {
       {/* ── Footer tag ── */}
       <div className={styles.footer}>
         <span className={styles.footerDot} />
-        <span>出行决策助手 · OpenAI Agents SDK · EdgeOne Makers</span>
+        <span>AI 面试教练 · OpenAI Agents SDK · EdgeOne Makers</span>
       </div>
     </div>
   );

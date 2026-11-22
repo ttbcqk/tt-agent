@@ -1,25 +1,25 @@
 const zh = {
   // Header
-  "app.title": "出行决策助手",
-  "app.subtitle": "查附近商场 · 按偏好推荐 · 给出出行建议",
+  "app.title": "AI 面试教练",
+  "app.subtitle": "模拟面试 · 逐题点评 · 生成报告",
 
   // Empty state
-  "empty.title": "出行决策助手",
-  "empty.hint": "告诉我你在哪里、喜欢什么品牌或场景，我会搜索附近商场、结合你的偏好推荐最合适的地方，并给出出行建议。",
-  "empty.features": "附近商场搜索 · 偏好匹配 · 出行建议",
+  "empty.title": "AI 面试教练",
+  "empty.hint": "告诉我你要面试的岗位，我会模拟真实面试：逐轮出题、点评你的回答，最后生成一份综合面试报告。",
+  "empty.features": "多轮模拟面试 · 四维点评 · 综合报告",
 
   // Chat input
-  "chat.placeholder": "例如：我在静安寺，想找个适合情侣约会的商场…  ⏎ 发送 · Shift+⏎ 换行",
+  "chat.placeholder": "例如：我要面试前端开发工程师，开始模拟面试  ⏎ 发送 · Shift+⏎ 换行",
   "chat.hint": "由 OpenAI Agents SDK + EdgeOne Makers 驱动 · 仅供演示",
 
   // Preset questions
-  "preset.1": "我在上海静安寺，想找个适合情侣约会的商场",
-  "preset.2": "帮我在附近找有咖啡和轻奢品牌的商场，并给出出行建议",
+  "preset.1": "我要面试前端开发工程师，开始模拟面试",
+  "preset.2": "帮我做一场产品经理的模拟面试",
 
   // Tool indicators
-  "tool.search": "搜索商场",
-  "tool.details": "商场详情",
-  "tool.plan": "出行建议",
+  "tool.question": "生成面试题",
+  "tool.evaluate": "答题点评",
+  "tool.report": "综合报告",
 
   // Status & errors
   "status.error": "⚠️ 请求失败，请检查后端服务是否启动。",
@@ -36,12 +36,12 @@ const zh = {
   // Conversation sidebar
   "sidebar.label": "会话列表",
   "sidebar.title": "会话",
-  "sidebar.newChat": "新建聊天",
+  "sidebar.newChat": "新建面试",
   "sidebar.loading": "正在加载会话...",
   "sidebar.loadMore": "加载更多",
   "sidebar.loadingMore": "加载中...",
   "sidebar.emptyTitle": "暂无会话",
-  "sidebar.emptyHint": "点击「新建聊天」开始第一段对话。",
+  "sidebar.emptyHint": "点击「新建面试」开始第一场模拟面试。",
   "sidebar.delete": "删除会话",
   "sidebar.deleteConfirm": "确定要永久删除这个会话吗？此操作不可恢复。",
 
